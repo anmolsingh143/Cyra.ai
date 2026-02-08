@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev": "npm run -w frontend dev",
-    "build": "npm install -w frontend && npm run -w frontend build && rm -rf \"npm start\" && mkdir -p \"npm start\" && cp -R frontend/out/. \"npm start\"/",
+    "build": "npm run -w frontend build && rm -rf \"npm start\" && mkdir -p \"npm start\" && cp -R frontend/out/. \"npm start\"/",
     "start": "npm run -w frontend start",
     "lint": "npm run -w frontend lint"
   }
