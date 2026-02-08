@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev": "npm run -w frontend dev",
-    "build": "npm run -w frontend build",
+    "build": "npm run -w frontend build && node scripts/prepare-render-publish.mjs",
     "start": "npm run -w frontend start",
     "lint": "npm run -w frontend lint"
   }
