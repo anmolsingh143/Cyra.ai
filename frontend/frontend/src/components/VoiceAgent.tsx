@@ -49,7 +49,10 @@ const VoiceAgent = ({ onAgentSpeak, onReset }: VoiceAgentProps) => {
         )}
 
         <button
-          onClick={reset}
+          onClick={() => {
+            reset();
+            onReset();
+          }}
           className="px-8 py-4 rounded-full bg-white cursor-pointer text-black hover:bg-amber-200 transition-all duration-300"
         >
           Reset
